@@ -73,22 +73,25 @@ def step_function(x):
     return np.array(x > 0, dtype=np.int)
 
 
-x = np.arange(-5.0, 5.0, 0.1)
-y = step_function(x)
-plt.plot(x, y)
-plt.ylim(-0.1, 1.1)  # y 軸の範囲を指定
-plt.show()
+#
+# x = np.arange(-5.0, 5.0, 0.1)
+# y = step_function(x)
+# plt.plot(x, y)
+# plt.ylim(-0.1, 1.1)  # y 軸の範囲を指定
+# plt.show()
 
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-x = np.arange(-5.0, 5.0, 0.1)
-y = sigmoid(x)
-plt.plot(x, y)
-plt.ylim(-0.1, 1.1)  # y 軸の範囲を指定
-plt.show()
+#
+#
+# x = np.arange(-5.0, 5.0, 0.1)
+# y = sigmoid(x)
+# plt.plot(x, y)
+# plt.ylim(-0.1, 1.1)  # y 軸の範囲を指定
+# plt.show()
 
 
 def relu(x):
@@ -99,3 +102,16 @@ def relu(x):
 # 多次元配列
 ###
 
+##  ニューラルネットワークの行列の席
+
+def nuralnetwork():
+    X = np.array([1, 2])
+    X_data = X.shape
+    print(X_data)
+    W = np.array([[1, 3, 5], [2, 4, 6]])
+    print(W)
+    Y = np.dot(X, W)
+    print(Y)
+
+
+nuralnetwork()
